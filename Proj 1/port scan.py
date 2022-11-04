@@ -1,24 +1,35 @@
-# https://www.studytonight.com/network-programming-in-python/integrating-port-scanner-with-nmap
+import os
+
 import nmap
 
+SAVE_DIR = '/results/port_scan.txt'
 
-def scan_ports():
-    host = input('Enter the remote host IP to scan: ')
-    start_port = input('Enter the Start port number:\t')
-    last_port = input('Enter the last port number:\t')
+
+def scan_ports(host_addr, start_port_num, last_port_num):
     host_scan = nmap.PortScanner()
-    host_scan.scan(host, start_port + '-' + last_port)
-    for host in host_scan.all_hosts():
-        print('Host : %s (%s)' % (host, host_scan[host].hostname()))
-        print('State : %s' % host_scan[host].state())
-        for proto in host_scan[host].all_protocols():
-            print('----------')
-            print('Protocol : %s' % proto)
-            lport = host_scan[host][proto].keys()
-            for port in lport:
-                if host_scan[host][proto][port]['state'] == "open":
-                    print('Port Open:-->\t %s ' % port)
+    host_scan.scan(host_addr, generate_range(last_port_num, start_port_num))
+    curr_path = os.path.dirname(os.path.abspath(__file__))
+    with open(curr_path + SAVE_DIR, 'w') as f:
+        for host in host_scan.all_hosts():
+            print(f'state of the host: {host_scan[host].state()}')
+            for protocol in host_scan[host].all_protocols():
+                print(f'protocol: {protocol}')
+                for port in host_scan[host][protocol].keys():
+                    if host_scan[host][protocol][port]['state'] == 'open':
+                        save_open_port(port, f)
+
+
+def generate_range(last_port_num, start_port_num):
+    return start_port_num + '-' + last_port_num
+
+
+def save_open_port(port, f):
+    print(f'open port: {port}')
+    f.write(f'open port: {port}\n')
 
 
 if __name__ == '__main__':
-    scan_ports()
+    host = input('Remote host IP: ')
+    start_port = input('Start port: ')
+    last_port = input('last port: ')
+    scan_ports(host, start_port, last_port)

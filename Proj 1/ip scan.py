@@ -2,16 +2,23 @@ import os
 
 import nmap
 
+ARGUMENTS = "-sn"
+SAVE_DIR = '/results/ip_scan.txt'
+
 
 def scan_ip():
-    address = input('Enter the Network Address: ')
-    subnet = input('Enter the subnet: ')
+    address = input('Network Address: ')
+    subnet = input('Subnet: ')
     host = nmap.PortScannerYield()
-    progressive_results = host.scan(hosts=address + '/' + subnet, arguments="-sn")
+    progressive_results = host.scan(hosts=generate_address(address, subnet), arguments=ARGUMENTS)
     curr_path = os.path.dirname(os.path.abspath(__file__))
-    with open(curr_path + '/results/ip_scan.txt', 'w') as f:
+    with open(curr_path + SAVE_DIR, 'w') as f:
         for result in progressive_results:
             save_result(result, f)
+
+
+def generate_address(address, subnet):
+    return address + '/' + subnet
 
 
 def save_result(result, f):
