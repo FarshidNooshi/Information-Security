@@ -1,0 +1,33 @@
+Pinging google.com [216.58.209.142] with 32 bytes of data:
+Reply from 216.58.209.142: bytes=32 time=69ms TTL=111
+Reply from 216.58.209.142: bytes=32 time=68ms TTL=111
+Reply from 216.58.209.142: bytes=32 time=68ms TTL=111
+Reply from 216.58.209.142: bytes=32 time=68ms TTL=111
+
+Ping statistics for 216.58.209.142:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 68ms, Maximum = 69ms, Average = 68ms
+
+
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=75ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=76ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=75ms TTL=109
+Reply from 8.8.8.8: bytes=32 time=68ms TTL=109
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 68ms, Maximum = 76ms, Average = 73ms
+
+
+Pinging facebook.com [10.10.34.35] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.10.34.35:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),

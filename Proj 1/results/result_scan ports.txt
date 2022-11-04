@@ -1,0 +1,9 @@
+Enter the remote host IP to scan: 8.8.8.8
+Enter the Start port number:    20
+Enter the last port number:     120
+Host : 8.8.8.8 (dns.google)
+State : up
+----------
+Protocol : tcp
+Port Open:-->    53
+Port Open:-->    80
