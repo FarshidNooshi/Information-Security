@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 python-nmap = "==0.7.1"
+ping3 = "*"
 
 [dev-packages]
 
