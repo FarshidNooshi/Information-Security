@@ -3,11 +3,11 @@ import os
 import nmap
 
 ARGUMENTS = "-sn"
-SAVE_DIR = '/results/ip_scan.txt'
+SAVE_DIR = '/results/result_ip scan.txt'
 
 
 def scan_ip():
-    address = input('Network Address: ')
+    address = input('Address: ')
     subnet = input('Subnet: ')
     host = nmap.PortScannerYield()
     progressive_results = host.scan(hosts=generate_address(address, subnet), arguments=ARGUMENTS)

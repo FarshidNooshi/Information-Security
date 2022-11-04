@@ -1,5 +1,5 @@
-Please Enter Your IP/Domain: google.com
-ping 'google.com' ... 32ms
+IP/Domain: google.com
 ping 'google.com' ... 32ms
 ping 'google.com' ... 34ms
+ping 'google.com' ... 31ms
 ping 'google.com' ... 31ms

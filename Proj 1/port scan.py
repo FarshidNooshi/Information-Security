@@ -2,7 +2,7 @@ import os
 
 import nmap
 
-SAVE_DIR = '/results/port_scan.txt'
+SAVE_DIR = '/results/result_port scan.txt'
 
 
 def scan_ports(host_addr, start_port_num, last_port_num):
@@ -29,7 +29,7 @@ def save_open_port(port, f):
 
 
 if __name__ == '__main__':
-    host = input('Remote host IP: ')
+    host = input('Host IP: ')
     start_port = input('Start port: ')
     last_port = input('last port: ')
     scan_ports(host, start_port, last_port)
