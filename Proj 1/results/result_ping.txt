@@ -1,5 +1,20 @@
+IP/Domain: 216.58.212.228
+PING 216.58.212.228 (216.58.212.228): 56 data bytes
+64 bytes from 216.58.212.228: icmp_seq=0 ttl=113 time=929.324 ms
+Request timeout for icmp_seq 1
+64 bytes from 216.58.212.228: icmp_seq=1 ttl=113 time=1494.231 ms
+64 bytes from 216.58.212.228: icmp_seq=2 ttl=113 time=976.833 ms
+
+--- 216.58.212.228 ping statistics ---
+4 packets transmitted, 3 packets received, 25.0% packet loss
+round-trip min/avg/max/stddev = 929.324/1133.463/1494.231/255.838 ms
 IP/Domain: google.com
-ping 'google.com' ... 32ms
-ping 'google.com' ... 34ms
-ping 'google.com' ... 31ms
-ping 'google.com' ... 31ms
+PING google.com (172.217.167.78): 56 data bytes
+64 bytes from 172.217.167.78: icmp_seq=0 ttl=119 time=837.700 ms
+Request timeout for icmp_seq 1
+64 bytes from 172.217.167.78: icmp_seq=1 ttl=119 time=1072.545 ms
+64 bytes from 172.217.167.78: icmp_seq=2 ttl=119 time=824.077 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 3 packets received, 25.0% packet loss
+round-trip min/avg/max/stddev = 824.077/911.441/1072.545/114.054 ms
