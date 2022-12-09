@@ -24,3 +24,5 @@ if __name__ == '__main__':
     print(f"Key with salt and key size of 256 bits in hexadecimal: {encryptor.show_hex_key()}")
     print(f"Key with salt and key size of 256 bits in hexadecimal length in bytes: {len(encryptor.show_hex_key())}")
     separate_lines_in_terminal()
+    print(f"Initial vector for ctr mode: {encryptor.generate_initial_vector_for_ctr_mode()}")
+    print(f"Initial vector for ctr mode length in bytes: {len(encryptor.generate_initial_vector_for_ctr_mode())}")

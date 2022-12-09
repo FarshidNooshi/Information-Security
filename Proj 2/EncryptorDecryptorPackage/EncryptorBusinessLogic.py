@@ -1,7 +1,7 @@
 import base64
 import binascii
 import os
-
+import secrets
 import pbkdf2
 
 
@@ -43,3 +43,11 @@ class EncryptorBusinessLogic:
         :return: the key in hexadecimal
         """
         return binascii.b2a_hex(self.key)
+
+    @staticmethod
+    def generate_initial_vector_for_ctr_mode():
+        """
+        Generate an initial vector for ctr mode
+        :return: the initial vector
+        """
+        return secrets.token_bytes(16)
