@@ -1,0 +1,79 @@
+____
+|  _ \  ___ _ __ ___   ___
+| | | |/ _ \ '_ ` _ \ / _ \
+| |_| |  __/ | | | | | (_) |
+|____/ \___|_| |_| |_|\___/
+
+
+Key: AUT*ICTSec*2022
+Key length: 15
+sample salt: MCOWCnPO2Dt6IbFifT9koQ==
+Key with salt: AUT*ICTSec*2022RTRAPNxk/dqI5vN6V0quvw==
+----------------------------------------------------------------------------------------------------
+Key with salt length in bytes: 39
+Key with salt and key size of 256 bits: b'\xf8\x9a\x00\x85A\x0b\x80\xa8\x11=}\x940\xf7\x9f\xf0<\xa1GY?\xb15\x9c=\xe1\x1f9b\x98R\t'
+Key with salt and key size of 256 bits length in bytes: 32
+Key with salt and key size of 256 bits in hexadecimal: b'f89a0085410b80a8113d7d9430f79ff03ca147593fb1359c3de11f3962985209'
+Key with salt and key size of 256 bits in hexadecimal length: 64
+----------------------------------------------------------------------------------------------------
+Initial vector for ctr mode: b'R\xa0[\xa5\x83\xca\xd4\xd7KM(\xb3\xc0\x90\x04\xd36$\xc34\x01\x9f4\xe1\xdb|.r\xb9NR\xe0\x91\x04`sb\xe6.\xee\xe12\xf9b=W\xa7\x18pW\x9aj\xc2\xdb\xc4c\xd9\xd6kI \xf4\xb25{\xb8\x8d:\x02\xd4\xd0g\x8c\x13\x86\xf7\xbb[P\xd1\x0e\x9dE"\xbf\xbd@~\xb2\x1a/\xb2\'\x86\xf1\x97\xcc\xa4\xa9q\x8a\xb5\xec\xc4\x1f\xbeb\n\x17t\xcfF0\xed%q\x94\xc9\x1et\xa3D\xd1`\x82\xc3~z'
+Initial vector for ctr mode length in bytes: 128
+----------------------------------------------------------------------------------------------------
+Encrypting...
+Plaintext: 9831068
+Initial vector: 82905008914954037173259287542481215107160352242513375096458421586800623886977319327022431903644475691418446466322186934414363591412366715672459585555095075691130969493389820228603482244454072557014934510715880102588849251267929698402673610049473323550117133291802443821342329358179534555976336677560110320386
+Key: b'\xf8\x9a\x00\x85A\x0b\x80\xa8\x11=}\x940\xf7\x9f\xf0<\xa1GY?\xb15\x9c=\xe1\x1f9b\x98R\t'
+Ciphertext: b'\xa5F^k\x07V\x05'
+cipher text length in bytes: 7
+----------------------------------------------------------------------------------------------------
+saving key to file: Saved data to file
+----------------------------------------------------------------------------------------------------
+Decrypting...
+Ciphertext: b'\xa5F^k\x07V\x05'
+Initial vector: 82905008914954037173259287542481215107160352242513375096458421586800623886977319327022431903644475691418446466322186934414363591412366715672459585555095075691130969493389820228603482244454072557014934510715880102588849251267929698402673610049473323550117133291802443821342329358179534555976336677560110320386
+Key: b'\xf8\x9a\x00\x85A\x0b\x80\xa8\x11=}\x940\xf7\x9f\xf0<\xa1GY?\xb15\x9c=\xe1\x1f9b\x98R\t'
+Plaintext: b'9831068'
+Decrypted text length in bytes: 7
+----------------------------------------------------------------------------------------------------
+Deleting demo files...
+Demo files deleted.
+
+
+
+
+
+
+
+
+
+
+ _____                             _
+| ____|_ __   ___ _ __ _   _ _ __ | |_ ___  _ __
+|  _| | '_ \ / __| '__| | | | '_ \| __/ _ \| '__|
+| |___| | | | (__| |  | |_| | |_) | || (_) | |
+|_____|_| |_|\___|_|   \__, | .__/ \__\___/|_|
+                       |___/|_|
+ ____                             _                ____ _     ___
+|  _ \  ___  ___ _ __ _   _ _ __ | |_ ___  _ __   / ___| |   |_ _|
+| | | |/ _ \/ __| '__| | | | '_ \| __/ _ \| '__| | |   | |    | |
+| |_| |  __/ (__| |  | |_| | |_) | || (_) | |    | |___| |___ | |
+|____/ \___|\___|_|   \__, | .__/ \__\___/|_|     \____|_____|___|
+                      |___/|_|
+
+Enter 'e' to encrypt or 'd' to decrypt or 'q' to quit or 'r' to clean data directory: e
+Enter the path of the file to encrypt: /Volumes/Farshid_SSD/Projects/University/Information Security/Proj 2/EncryptorDecryptorPackage/data/text.txt
+Encrypting...
+Plaintext: 9831068
+Initial vector: 152260821431496842867544874487810793345359764303308468981476048592470139499012009181088760651311310305708177233481638261067663656576200267805670951269042791372025418673474764904543774388714949875314313516735613619634422685687278538891107471632576127313281223938163932941684024810672302667043900182319988479052
+Key: b'.\x1fgHP\xd4\xbc\xb9]}y4\x81W\x8f\xd0a\t^\xb9\x17\x00\x1e\xe4\xe9 j\x07G\xac,\xdd'
+Ciphertext: b'\xd0\xc1\xc3/0oL'
+Enter 'e' to encrypt or 'd' to decrypt or 'q' to quit or 'r' to clean data directory: d
+Enter the path of the file to decrypt: /Volumes/Farshid_SSD/Projects/University/Information Security/Proj 2/EncryptorDecryptorPackage/data/ciphertext.enc
+Decrypting...
+Ciphertext: b'\xd0\xc1\xc3/0oL'
+Initial vector: 152260821431496842867544874487810793345359764303308468981476048592470139499012009181088760651311310305708177233481638261067663656576200267805670951269042791372025418673474764904543774388714949875314313516735613619634422685687278538891107471632576127313281223938163932941684024810672302667043900182319988479052
+Key: b'.\x1fgHP\xd4\xbc\xb9]}y4\x81W\x8f\xd0a\t^\xb9\x17\x00\x1e\xe4\xe9 j\x07G\xac,\xdd'
+Plaintext: b'9831068'
+Enter 'e' to encrypt or 'd' to decrypt or 'q' to quit or 'r' to clean data directory: q
+
+Process finished with exit code 0

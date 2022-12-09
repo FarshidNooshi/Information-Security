@@ -29,20 +29,18 @@ def demo():
     print(f"Key with salt and key size of 256 bits length in bytes: {len(demo_encryptor.key)}")
     print(f"Key with salt and key size of 256 bits in hexadecimal: {demo_encryptor.show_hex_key()}")
     print(
-        f"Key with salt and key size of 256 bits in hexadecimal length in bytes: {len(demo_encryptor.show_hex_key())}")
+        f"Key with salt and key size of 256 bits in hexadecimal length: {len(demo_encryptor.show_hex_key())}")
     separate_lines_in_terminal()
     print(f"Initial vector for ctr mode: {demo_encryptor.generate_initial_vector_for_ctr_mode()}")
     print(f"Initial vector for ctr mode length in bytes: {len(demo_encryptor.generate_initial_vector_for_ctr_mode())}")
     separate_lines_in_terminal()
     encrypted_text = demo_encryptor.encrypt("EncryptorDecryptorPackage/data/text.txt")
-    print(f"Encrypted text: {encrypted_text}")
-    print(f"Encrypted text length in bytes: {len(encrypted_text)}")
+    print(f"cipher text length in bytes: {len(encrypted_text)}")
     separate_lines_in_terminal()
     print(f"saving key to file: {demo_encryptor.save_data(PROGRAM_DATA_PATH)}")
     separate_lines_in_terminal()
     demo_decryptor = DecryptorBusinessLogic(PROGRAM_DATA_PATH)
     decrypted = demo_decryptor.decrypt(os.path.join(DATA_PATH, "ciphertext.enc"))
-    print(f"Decrypted text: {decrypted}")
     print(f"Decrypted text length in bytes: {len(decrypted)}")
     separate_lines_in_terminal()
     delete_demo_files()
@@ -50,12 +48,16 @@ def demo():
 
 def delete_demo_files():
     print("Deleting demo files...")
+    delete_files()
+    print("Demo files deleted.")
+
+
+def delete_files():
     os.remove(os.path.join(DATA_PATH, "ciphertext.enc"))
     os.remove(os.path.join(DATA_PATH, "ciphertext.txt"))
     os.remove(os.path.join(DATA_PATH, "decrypted.dec"))
     os.remove(os.path.join(PROGRAM_DATA_PATH + ".iv"))
     os.remove(os.path.join(PROGRAM_DATA_PATH + ".key"))
-    print("Demo files deleted.")
 
 
 if __name__ == '__main__':
@@ -64,7 +66,7 @@ if __name__ == '__main__':
         print("\n")
     print(pyfiglet.figlet_format('Encryptor Decryptor CLI'))
     while True:
-        user_input = input("Enter 'e' to encrypt or 'd' to decrypt or 'q' to quit: ")
+        user_input = input("Enter 'e' to encrypt or 'd' to decrypt or 'q' to quit or 'r' to clean data directory: ")
         if user_input == 'e':
             encryptor = EncryptorBusinessLogic(KEY_FILE_PATH)
             encryptor.add_salt_to_key()
@@ -75,5 +77,9 @@ if __name__ == '__main__':
         elif user_input == 'd':
             decryptor = DecryptorBusinessLogic(PROGRAM_DATA_PATH)
             decrypted_text = decryptor.decrypt(input("Enter the path of the file to decrypt: "))
+        elif user_input == 'r':
+            print("Deleting files...")
+            delete_files()
+            print("Files deleted.")
         elif user_input == 'q':
             break

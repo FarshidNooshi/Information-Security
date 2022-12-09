@@ -47,7 +47,7 @@ class EncryptorBusinessLogic:
         """
         return binascii.hexlify(self.key)
 
-    def generate_initial_vector_for_ctr_mode(self, size=16):
+    def generate_initial_vector_for_ctr_mode(self, size=128):
         """
         Generate an initial vector for ctr mode encryption
         :return: the initial vector
