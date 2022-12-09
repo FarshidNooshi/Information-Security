@@ -1,8 +1,11 @@
 import os
 
 from EncryptorDecryptorPackage.EncryptorBusinessLogic import EncryptorBusinessLogic
+from EncryptorDecryptorPackage.DecryptorBusinessLogic import DecryptorBusinessLogic
 
-KEY_FILE_PATH = os.path.join(os.path.dirname(__file__), "EncryptorDecryptorPackage/data/key.txt")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "EncryptorDecryptorPackage/data")
+KEY_FILE_PATH = os.path.join(DATA_PATH, "key.txt")
+PROGRAM_DATA_PATH = os.path.join(DATA_PATH, "program", 'data')
 
 
 def separate_lines_in_terminal():
@@ -26,3 +29,15 @@ if __name__ == '__main__':
     separate_lines_in_terminal()
     print(f"Initial vector for ctr mode: {encryptor.generate_initial_vector_for_ctr_mode()}")
     print(f"Initial vector for ctr mode length in bytes: {len(encryptor.generate_initial_vector_for_ctr_mode())}")
+    separate_lines_in_terminal()
+    encrypted_text = encryptor.encrypt("EncryptorDecryptorPackage/data/text.txt")
+    print(f"Encrypted text: {encrypted_text}")
+    print(f"Encrypted text length in bytes: {len(encrypted_text)}")
+    separate_lines_in_terminal()
+    print(f"saving key to file: {encryptor.save_data('EncryptorDecryptorPackage/data/program/data')}")
+    separate_lines_in_terminal()
+    decryptor = DecryptorBusinessLogic(PROGRAM_DATA_PATH)
+    decrypted_text = decryptor.decrypt(os.path.join(DATA_PATH, "ciphertext.enc"))
+    print(f"Decrypted text: {decrypted_text}")
+    print(f"Decrypted text length in bytes: {len(decrypted_text)}")
+    separate_lines_in_terminal()

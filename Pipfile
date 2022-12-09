@@ -8,6 +8,7 @@ python-nmap = "==0.7.1"
 ping3 = "*"
 pyfiglet = "*"
 pbkdf2 = "*"
+pyaes = "*"
 
 [dev-packages]
 
