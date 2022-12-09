@@ -23,7 +23,7 @@ class EncryptorBusinessLogic:
 
     def add_salt_to_key(self):
         """
-        Add a salt to the key
+        Add a salt to the key and return the new key
         :return: the new key
         """
         salt = self.generate_salt()
