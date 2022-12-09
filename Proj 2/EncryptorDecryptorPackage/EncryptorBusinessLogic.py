@@ -45,7 +45,7 @@ class EncryptorBusinessLogic:
         Show the key in hexadecimal
         :return: the key in hexadecimal
         """
-        return binascii.b2a_hex(self.key)
+        return binascii.hexlify(self.key)
 
     def generate_initial_vector_for_ctr_mode(self, size=16):
         """

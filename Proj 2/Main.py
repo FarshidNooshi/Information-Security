@@ -41,9 +41,9 @@ def demo():
     print(f"saving key to file: {demo_encryptor.save_data(PROGRAM_DATA_PATH)}")
     separate_lines_in_terminal()
     demo_decryptor = DecryptorBusinessLogic(PROGRAM_DATA_PATH)
-    decrypted_text = demo_decryptor.decrypt(os.path.join(DATA_PATH, "ciphertext.enc"))
-    print(f"Decrypted text: {decrypted_text}")
-    print(f"Decrypted text length in bytes: {len(decrypted_text)}")
+    decrypted = demo_decryptor.decrypt(os.path.join(DATA_PATH, "ciphertext.enc"))
+    print(f"Decrypted text: {decrypted}")
+    print(f"Decrypted text length in bytes: {len(decrypted)}")
     separate_lines_in_terminal()
     delete_demo_files()
 
