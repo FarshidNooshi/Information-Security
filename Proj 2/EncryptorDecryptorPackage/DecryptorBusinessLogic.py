@@ -1,3 +1,5 @@
+import os
+
 import pyaes
 
 
@@ -29,8 +31,10 @@ class DecryptorBusinessLogic:
         print("Decrypting...")
         print("Ciphertext: " + str(ciphertext))
         plaintext = self.__decrypt(ciphertext)
-        self.write_to_file(plaintext, ciphertext_path + ".dec")
-        self.write_to_file(plaintext, ciphertext_path + ".txt", "wb")
+        print("Plaintext: " + str(plaintext))
+        write_path = os.path.join(os.path.dirname(ciphertext_path), "decrypted")
+        self.write_to_file(plaintext, write_path + ".dec")
+        # self.write_to_file(plaintext, write_path + ".txt", "wb")
         return plaintext
 
     @staticmethod

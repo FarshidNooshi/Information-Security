@@ -77,6 +77,7 @@ class EncryptorBusinessLogic:
         print("Encrypting...")
         print("Plaintext: " + plaintext)
         ciphertext = self.__encrypt(plaintext)
+        print("Ciphertext: " + str(ciphertext))
         write_path = os.path.join(os.path.dirname(plaintext_path), "ciphertext")
         self.write_to_file(ciphertext, write_path + ".enc")
         self.write_to_file(str(ciphertext), write_path + ".txt", "w")
