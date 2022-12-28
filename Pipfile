@@ -9,6 +9,8 @@ ping3 = "*"
 pyfiglet = "*"
 pbkdf2 = "*"
 pyaes = "*"
+psutil = "*"
+wmi = "*"
 
 [dev-packages]
 
