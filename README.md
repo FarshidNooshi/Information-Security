@@ -2,6 +2,9 @@
   <h1>In The Name Of GOD</h1>
 </div>
 
+ <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+ <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - \Python Style Guide"></a> 
+
 # Information Security Course Repository
 
 This repository contains three Python projects related to Information Security. Each project has its own directory with the necessary code and documentation to understand the project's purpose and how it works.
@@ -86,9 +89,10 @@ The purpose of this project is to provide an easy-to-use solution for gathering 
 </table>
 
 
-### README Template
+## License
 
-Feel free to use this template as a starting point for your own repository's README.
+The Information Security Course Repository and its three projects are licensed under the MIT License. This means that you are free to use, modify, and distribute the code, as long as you include the MIT License text in your distribution and give appropriate credit to the original authors.
+For more information, please see the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Conclusion
 
