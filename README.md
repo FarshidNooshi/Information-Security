@@ -96,4 +96,4 @@ To conclude, the Information Security Course Repository contains three valuable 
 
 It is my hope that the repository serves as a useful resource for those interested in information security and helps in their personal and professional growth. If you have any questions or suggestions, please feel free to reach out.
 
-# Thank you for visiting the repository and happy learning!
+#### Thank you for visiting the repository and happy learning!
