@@ -16,7 +16,7 @@ This project is a CLI (Command Line Interface) application that allows users to 
       <img src="Proj%201/results/IPScan1.png" width="400"/>
     </td>
     <td>
-      <img src="Proj%201/results/Ping.png" width="400"/>
+      <img src="Proj%201/results/Ping.png" width="500"/>
     </td>
   </tr>
   <tr>
@@ -61,11 +61,39 @@ This project is a CLI (Command Line Interface) application that allows users to 
 </table>
 
 
-## 3. System Information Collector
+## 3. Malware (System Information Collector)
 
 This project is a CLI (Command Line Interface) application that collects and sends system information to a server. The program runs on the client's system and gathers information such as hardware information, operating system model, and other critical details about the system. The collected information is then transmitted to a server, which is waiting to receive it.
 The purpose of this project is to provide an easy-to-use solution for gathering and sending system information for further analysis. The CLI interface makes it convenient for users to run the program and transmit the information, without having to navigate through a graphical user interface. The program is written in Python and is designed to be easy to use and maintain.
 
+<table>
+  <tr>
+    <td>
+      <img src="Proj%203/images/malware%20part%201.png" width="400"/>
+    </td>
+    <td>
+      <img src="Proj%203/images/Malware%20Part%202.png" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="Proj%203/images/Malware%20Part%203.png" width="600"/>
+    </td>
+    <td>
+      <img src="Proj%203/images/server_part1.png" width="500"/>
+    </td>
+  </tr>
+</table>
+
+
 ### README Template
 
 Feel free to use this template as a starting point for your own repository's README.
+
+## Conclusion
+
+To conclude, the Information Security Course Repository contains three valuable Python projects that aim to showcase the importance of various aspects of information security. The projects cover different areas of security, including network scanning, encryption and decryption, and malware development. The projects have been well documented and include comprehensive code and visual aids to help understand the workings of each project.
+
+It is my hope that the repository serves as a useful resource for those interested in information security and helps in their personal and professional growth. If you have any questions or suggestions, please feel free to reach out.
+
+# Thank you for visiting the repository and happy learning!
